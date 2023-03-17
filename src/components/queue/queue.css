@@ -1,0 +1,65 @@
+.queue-container {
+  width: 100%;
+  height: 32%;
+  border-radius: 15px;
+  background: rgb(22, 0, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 0, 88, 1) 0%,
+    rgba(30, 0, 109, 1) 26%,
+    rgba(69, 21, 130, 1) 49%
+  );
+  border-top-right-radius: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.queue{
+    width: 100%;
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upNext{
+    font-size: 17px;
+    font-weight: 700;
+    color: #d5d5d5;
+    margin: 15px 30px 0 30px;
+}
+
+.queue-list{
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* ẩn thanh scrollbar */
+.queue-list::-webkit-scrollbar{
+    display: none;
+}
+.queue-item{
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 6px;
+}
+.queue-item p{
+    margin: 0;
+    padding: 4px 0;
+    color: #d5d5d5;
+    font-size: 12px;
+    cursor: pointer;
+}
+.track-name:hover{
+    transform: scale(1.02);
+}
+.track-name{
+    width: 70%;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.2s linear;
+
+}
